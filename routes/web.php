@@ -20,15 +20,15 @@ Route::get('/services', function () {
 });
 
 Route::get('/how-we-work', function () {
-    return view('howwework');
+    return view('how-we-work');
 });
 
 Route::get('/join-us', function () {
-    return view('joinus');
+    return view('join-us');
 });
 
 Route::get('/available-jobs', function () {
-    return view('availablejobs');
+    return view('available-jobs');
 });
 
 Route::get('/contact', function () {
