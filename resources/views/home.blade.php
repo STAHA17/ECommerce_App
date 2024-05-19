@@ -8,6 +8,15 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            height: 100vh; /* Full height */
+            object-fit: cover;
+        }
+    </style>
+
 </head>
 <body>
     @include('partials.navbar')
@@ -23,13 +32,13 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ asset('images/Image1.jpg') }}" class="d-block w-100" alt="Slide 1">
+                <img src="{{ asset('images/Image5.jpg') }}" class="d-block w-100" alt="Slide 1">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('images/Image2.jpg') }}" class="d-block w-100" alt="Slide 2">
+                <img src="{{ asset('images/Image7.jpg') }}" class="d-block w-100" alt="Slide 2">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('images/Image3.jpg') }}" class="d-block w-100" alt="Slide 3">
+                <img src="{{ asset('images/Image8.jpg') }}" class="d-block w-100" alt="Slide 3">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -40,6 +49,44 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="row mt-5">
+            <!-- Repeat this block for each product -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ asset('images/Product1.jpg') }}" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">$19.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ asset('images/Product2.jpg') }}" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">$19.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ asset('images/Product3.jpg') }}" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3</h5>
+                        <p class="card-text">$19.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     @include('partials.footer')
