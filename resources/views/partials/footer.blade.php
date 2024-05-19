@@ -26,4 +26,20 @@
         </div>
     </div>
     <div class="text-center p-3 bg-light">© 2024 E-Commerce Website</div>
+
+    <!-- Google Maps API Script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            var location = { lat: 40.712776, lng: -74.005974 }; // Example coordinates (New York City)
+            var map = new google.maps.Map(document.getElementById('map-footer'), {
+                zoom: 14,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
 </footer>
