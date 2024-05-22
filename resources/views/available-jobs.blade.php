@@ -4,24 +4,33 @@
 @section('title', 'Available Jobs')
 
 @section('content')
-    <h1>Available Jobs</h1>
-    <p>Current job openings...</p>
+<div class="container available-jobs">
+    <h1 class="text-center mb-4">Available Jobs</h1>
+    <p class="lead text-center">Explore our current job openings and find the perfect opportunity to join our team.</p>
+
     <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action">
-            <h5 class="mb-1">Job Title 1</h5>
-            <p class="mb-1">Brief job description...</p>
-            <small>Location: City, State</small>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start job-item">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1 job-title">Junior Web Developer</h5>
+                <small class="text-muted job-location">Location: City, State</small>
+            </div>
+            <p class="mb-1 job-description">Brief job description detailing the key responsibilities and requirements...</p>
         </a>
-        <a href="#" class="list-group-item list-group-item-action">
-            <h5 class="mb-1">Job Title 2</h5>
-            <p class="mb-1">Brief job description...</p>
-            <small>Location: City, State</small>
+        <a href="#" class="mt-2 list-group-item list-group-item-action flex-column align-items-start job-item">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1 job-title">Software Engineer</h5>
+                <small class="text-muted job-location">Location: City, State</small>
+            </div>
+            <p class="mb-1 job-description">Brief job description detailing the key responsibilities and requirements...</p>
         </a>
-        <a href="#" class="list-group-item list-group-item-action">
-            <h5 class="mb-1">Job Title 3</h5>
-            <p class="mb-1">Brief job description...</p>
-            <small>Location: City, State</small>
+        <a href="#" class="mt-2 list-group-item list-group-item-action flex-column align-items-start job-item">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1 job-title">Software Quality Assurance</h5>
+                <small class="text-muted job-location">Location: City, State</small>
+            </div>
+            <p class="mb-1 job-description">Brief job description detailing the key responsibilities and requirements...</p>
         </a>
         <!-- Add more job listings as needed -->
     </div>
+</div>
 @endsection

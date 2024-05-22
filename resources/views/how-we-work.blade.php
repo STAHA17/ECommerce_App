@@ -4,7 +4,7 @@
 @section('title', 'How We Work')
 
 @section('content')
-<div class="container mt-5">
+<div class="container ">
     <h1 class="text-center mb-4">How We Work</h1>
     <p class="text-center">We follow a structured and transparent process to ensure the highest quality of service and satisfaction for our clients. Here’s how we work:</p>
     

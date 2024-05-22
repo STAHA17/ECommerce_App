@@ -4,8 +4,8 @@
 @section('title', 'Contact Us')
 
 @section('content')
-    <h1>Contact Us</h1>
-    <p>We'd love to hear from you! Please fill out the form below to get in touch with us.</p>
+    <h1 class="text-center">Contact Us</h1>
+    <p class="text-center">We'd love to hear from you! Please fill out the form below to get in touch with us.</p>
     <form>
         <div class="form-row">
             <div class="form-group col-md-6">

@@ -4,7 +4,7 @@
 @section('title', 'Services')
 
 @section('content')
-<div class="container mt-5">
+<div class="container ">
     <h1 class="text-center mb-4">Our Services</h1>
     <p class="text-center">We offer a wide range of services to meet your needs. Below is a list of the key services we provide.</p>
     

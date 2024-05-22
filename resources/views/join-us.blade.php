@@ -4,7 +4,7 @@
 @section('title', 'Join Us')
 
 @section('content')
-<div class="container mt-5">
+<div class="container ">
     <h1 class="text-center mb-4">Join Our Team</h1>
     <p class="lead text-center">At our company, we value passion, creativity, and dedication. We are always on the lookout for talented individuals to join our dynamic team. Here’s why you should consider joining us and how you can apply.</p>
 

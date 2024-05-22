@@ -22,7 +22,7 @@
     @include('partials.navbar')
     <div class="container mt-5">
         <!-- Your content here -->
-        <h1>Welcome to Our E-Commerce Website</h1>
+        <h1 class="text-center ">Welcome to Our E-Commerce Website</h1>
         <!-- Carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">

@@ -135,7 +135,7 @@ h1 {
 }
 
 /* Step Number Styles */
-.card-title::before {
+/* .card-title::before {
   content: attr(data-step);
   display: inline-block;
   background-color: #2e9a9a;
@@ -147,7 +147,7 @@ h1 {
   line-height: 30px;
   border-radius: 50%;
   margin-right: 0.5rem;
-}
+} */
 
 /* Footer styles (if used globally)
 .footer {
@@ -167,3 +167,49 @@ h1 {
 .footer p {
   margin-bottom: 0;
 } */
+
+/* public/css/styles.css */
+
+/* .available-jobs {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+} */
+
+/* .available-jobs h1 {
+  font-size: 2.5rem;
+  color: #333;
+} */
+
+/* .available-jobs .lead {
+  font-size: 1.25rem;
+  color: #777;
+} */
+
+.available-jobs .list-group-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.available-jobs .list-group-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.available-jobs .job-title {
+  font-size: 1.5rem;
+  color: #1d1a1a;
+}
+
+.available-jobs .job-location {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.available-jobs .job-description {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 10px;
+}
