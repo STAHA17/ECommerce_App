@@ -12,10 +12,10 @@
         <!-- Service 1 -->
         <div class="col-md-4 mb-4">
             <div class="card h-100">
-                <img src="{{ asset('images/Product3.jpg') }}" class="card-img-top" alt="Service 1">
+                <img src="{{ asset('images/service1.jpg') }}" class="card-img-top" alt="Service 1">
                 <div class="card-body">
-                    <h5 class="card-title">Service 1</h5>
-                    <p class="card-text">A brief description of Service 1. This service includes features and benefits that provide value to our customers.</p>
+                    <h5 class="card-title">Technology</h5>
+                    <p class="card-text">Leverage cutting-edge technology solutions to streamline your operations and enhance productivity. Our tech services ensure your business stays ahead in the digital age.</p>
                 </div>
             </div>
         </div>
@@ -23,10 +23,10 @@
         <!-- Service 2 -->
         <div class="col-md-4 mb-4">
             <div class="card h-100">
-                <img src="{{ asset('images/Product3.jpg') }}" class="card-img-top" alt="Service 2">
+                <img src="{{ asset('images/service2.jpg') }}" class="card-img-top" alt="Service 2">
                 <div class="card-body">
-                    <h5 class="card-title">Service 2</h5>
-                    <p class="card-text">A brief description of Service 2. Highlight what makes this service special and why customers should consider it.</p>
+                    <h5 class="card-title">Business</h5>
+                    <p class="card-text">Optimize your business strategies with our expert consulting services. We provide insights and solutions to drive growth and efficiency in your organization.</p>
                 </div>
             </div>
         </div>
@@ -34,10 +34,10 @@
         <!-- Service 3 -->
         <div class="col-md-4 mb-4">
             <div class="card h-100">
-                <img src="{{ asset('images/Product3.jpg') }}" class="card-img-top" alt="Service 3">
+                <img src="{{ asset('images/service3.jpg') }}" class="card-img-top" alt="Service 3">
                 <div class="card-body">
-                    <h5 class="card-title">Service 3</h5>
-                    <p class="card-text">A brief description of Service 3. Include any unique features or advantages that make this service stand out.</p>
+                    <h5 class="card-title">Support</h5>
+                    <p class="card-text">Experience unparalleled customer support with our dedicated service team. We're here to help you with any issues, ensuring smooth and uninterrupted operations.</p>
                 </div>
             </div>
         </div>
@@ -47,10 +47,10 @@
         <!-- Service 4 -->
         <div class="col-md-4 mb-4">
             <div class="card h-100">
-                <img src="{{ asset('images/Product3.jpg') }}" class="card-img-top" alt="Service 4">
+                <img src="{{ asset('images/service6.jpg') }}" class="card-img-top" alt="Service 4">
                 <div class="card-body">
-                    <h5 class="card-title">Service 4</h5>
-                    <p class="card-text">A brief description of Service 4. Emphasize the benefits and positive outcomes customers can expect from this service.</p>
+                    <h5 class="card-title">Analytics</h5>
+                    <p class="card-text">Unlock the power of data with our comprehensive analytics services. Gain actionable insights to make informed decisions and drive business success.</p>
                 </div>
             </div>
         </div>
@@ -58,10 +58,10 @@
         <!-- Service 5 -->
         <div class="col-md-4 mb-4">
             <div class="card h-100">
-                <img src="{{ asset('images/Product3.jpg') }}" class="card-img-top" alt="Service 5">
+                <img src="{{ asset('images/service5.jpg') }}" class="card-img-top" alt="Service 5">
                 <div class="card-body">
-                    <h5 class="card-title">Service 5</h5>
-                    <p class="card-text">A brief description of Service 5. Describe how this service can solve problems or improve the customer's situation.</p>
+                    <h5 class="card-title">Problem Solving</h5>
+                    <p class="card-text">Tackle complex challenges with our innovative problem-solving services. We provide practical solutions to improve your processes and outcomes.</p>
                 </div>
             </div>
         </div>
@@ -69,10 +69,10 @@
         <!-- Service 6 -->
         <div class="col-md-4 mb-4">
             <div class="card h-100">
-                <img src="{{ asset('images/Product3.jpg') }}" class="card-img-top" alt="Service 6">
+                <img src="{{ asset('images/service9.jpg') }}" class="card-img-top" alt="Service 6">
                 <div class="card-body">
-                    <h5 class="card-title">Service 6</h5>
-                    <p class="card-text">A brief description of Service 6. Highlight the key features and any special offers related to this service.</p>
+                    <h5 class="card-title">Offers</h5>
+                    <p class="card-text">Take advantage of our exclusive offers and special deals. Enhance your business capabilities with our cost-effective and valuable service packages.</p>
                 </div>
             </div>
         </div>

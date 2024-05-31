@@ -5,9 +5,9 @@
             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                 <h5 class="text-uppercase">Contact Us</h5>
                 <ul class="list-unstyled mb-0">
-                    <li><i class="fas fa-envelope"></i> Email: info@example.com</li>
-                    <li><i class="fas fa-phone"></i> Phone: +1234567890</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Address: 123 Main St, Anytown, USA</li>
+                    <li><i class="fas fa-envelope"></i> Email: abc@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> Phone: +92 333 - *******</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Address: 123 Main St, Islamabad, Pakistan</li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">

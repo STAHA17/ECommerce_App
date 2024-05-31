@@ -32,10 +32,10 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ asset('images/Image5.jpg') }}" class="d-block w-100" alt="Slide 1">
+                <img src="{{ asset('images/service8.jpg') }}" class="d-block w-100" alt="Slide 1">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('images/Image7.jpg') }}" class="d-block w-100" alt="Slide 2">
+                <img src="{{ asset('images/service9.jpg') }}" class="d-block w-100" alt="Slide 2">
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('images/Image8.jpg') }}" class="d-block w-100" alt="Slide 3">
