@@ -2,10 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ApplicationController;
+use App\Http\Controllers\ContactController;
 
 // routes/web.php
 
-use App\Http\Controllers\ContactController;
+Route::post('/join-us', [ApplicationController::class, 'store'])->name('join-us.store');
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
 Route::get('/contact', function () {
     return view('contact');

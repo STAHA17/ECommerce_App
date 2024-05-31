@@ -1,4 +1,3 @@
-<!-- resources/views/contact.blade.php -->
 @extends('layout')
 
 @section('title', 'Contact Us')
