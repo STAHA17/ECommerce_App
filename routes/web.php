@@ -4,8 +4,19 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\HomeController;
 
 // routes/web.php
+// Route::get('/', [ProductController::class, 'index'])->name('home');
+    
+// Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index']);
+
+Route::post('/cart/add', [CartController::class, 'addToCart'])->name('cart.add');
+Route::get('/cart', [CartController::class, 'viewCart'])->name('cart.view');
+Route::delete('/cart/remove/{id}', [CartController::class, 'removeFromCart'])->name('cart.remove');
+
 
 Route::post('/join-us', [ApplicationController::class, 'store'])->name('join-us.store');
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');

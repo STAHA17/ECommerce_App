@@ -51,9 +51,33 @@
         </a>
     </div>
 
-    <!-- Product Grid -->
+    @if(isset($products) && $products->count() > 0)
     <div class="row mt-5">
-            <!-- Repeat this block for each product -->
+        @foreach($products as $product)
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ asset('images/' . $product->image) }}" class="card-img-top" alt="{{ $product->name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $product->name }}</h5>
+                        <p class="card-text">${{ $product->price }}</p>
+                        <form action="{{ route('cart.add') }}" method="POST">
+                            @csrf
+                            <input type="hidden" name="product_id" value="{{ $product->id }}">
+                            <input type="number" name="quantity" value="1" min="1" class="form-control mb-2" required>
+                            <button type="submit" class="btn btn-primary">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+    </div>
+    @else
+        <p>No products available.</p>
+    @endif
+
+
+    <!-- Product Grid -->
+    <!-- <div class="row mt-5">
             <div class="col-md-4">
                 <div class="card mb-4">
                     <img src="{{ asset('images/Product1.jpg') }}" class="card-img-top" alt="Product 1">
@@ -63,9 +87,9 @@
                         <a href="#" class="btn btn-primary">Add to Cart</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- 2nd -->
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
                 <div class="card mb-4">
                     <img src="{{ asset('images/Product2.jpg') }}" class="card-img-top" alt="Product 2">
                     <div class="card-body">
@@ -74,9 +98,9 @@
                         <a href="#" class="btn btn-primary">Add to Cart</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- 3rd -->
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
                 <div class="card mb-4">
                     <img src="{{ asset('images/Product3.jpg') }}" class="card-img-top" alt="Product 3">
                     <div class="card-body">
@@ -87,7 +111,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     @include('partials.footer')
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
