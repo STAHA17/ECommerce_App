@@ -15,6 +15,20 @@
             height: 100vh; /* Full height */
             object-fit: cover;
         }
+
+        .no-products-card {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            border-radius: 0.25rem;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .no-products-card p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
     </style>
 
 </head>
@@ -51,29 +65,35 @@
         </a>
     </div>
 
-    @if(isset($products) && $products->count() > 0)
-    <div class="row mt-5">
-        @foreach($products as $product)
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="{{ asset('images/' . $product->image) }}" class="card-img-top" alt="{{ $product->name }}">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ $product->name }}</h5>
-                        <p class="card-text">${{ $product->price }}</p>
-                        <form action="{{ route('cart.add') }}" method="POST">
-                            @csrf
-                            <input type="hidden" name="product_id" value="{{ $product->id }}">
-                            <input type="number" name="quantity" value="1" min="1" class="form-control mb-2" required>
-                            <button type="submit" class="btn btn-primary">Add to Cart</button>
-                        </form>
+    <div class="container mt-5">
+        <h1 class="text-center">Products</h1>
+        @if(isset($products) && $products->count() > 0)
+            <div class="row mt-5">
+                @foreach($products as $product)
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="{{ asset('images/' . $product->image) }}" class="card-img-top" alt="{{ $product->name }}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $product->name }}</h5>
+                                <p class="card-text">{{ $product->description }}</p>
+                                <p class="card-text">${{ $product->price }}</p>
+                                <form action="{{ route('cart.add') }}" method="POST">
+                                    @csrf
+                                    <input type="hidden" name="product_id" value="{{ $product->id }}">
+                                    <input type="number" name="quantity" value="1" min="1" class="form-control mb-2" required>
+                                    <button type="submit" class="btn btn-primary">Add to Cart</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                @endforeach
             </div>
-        @endforeach
+        @else
+            <div class="no-products-card">
+                <p>There's some error that's why Products isn't showing. Sorry for the inconvenience.</p>
+            </div>
+        @endif
     </div>
-    @else
-        <p>No products available.</p>
-    @endif
 
 
     <!-- Product Grid -->

@@ -11,15 +11,13 @@ class HomeController extends Controller
 {
     public function index()
     {
-        // // Fetch products from the database
-        // $products = Product::all(); // You can use paginate or any other method as needed
+        // Fetch products from the database
+        $products = Product::all();
 
-        // // Pass the products to the view
-        // return view('home', compact('products'));
+        // Log the fetched products (you might want to limit the data logged for readability and security)
+        Log::info('Fetched products: ', $products->toArray());
 
-        $products = Product::all(); // Fetch products from the database
-        Log::info('Fetched products: ' . $products); // Log the fetched products
-
-        return view('home', compact('products')); // Pass products to the 'home' view
+        // Pass the products to the 'home' view
+        return view('home', compact('products'));
     }
 }
