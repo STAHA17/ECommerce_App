@@ -5,10 +5,25 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\CartItem;
 use App\Models\Product;
+use Illuminate\Support\Facades\Session;
 use Auth;
 
 class CartController extends Controller
 {
+
+    public function add(Request $request)
+    {
+        $product = Product::findOrFail($request->product_id);
+        $quantity = $request->quantity;
+
+        // Add logic to store product in cart
+        // You can use sessions or a dedicated cart table in your database
+
+        Session::push('cart', ['product' => $product, 'quantity' => $quantity]);
+
+        return redirect()->route('product.show', $product->id)->with('success', 'Product added to cart!');
+    }
+
     public function addToCart(Request $request)
     {
         $request->validate([

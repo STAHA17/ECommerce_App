@@ -6,8 +6,14 @@ use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CheckoutController;
 
 // routes/web.php
+Route::get('/product/{id}', [ProductController::class, 'show'])->name('product.show');
+
+Route::post('/cart/add', [CartController::class, 'add'])->name('cart.add');
+
+Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout');
 // Route::get('/', [ProductController::class, 'index'])->name('home');
     
 // Route::get('/', [HomeController::class, 'index'])->name('home');

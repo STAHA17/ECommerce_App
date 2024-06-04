@@ -69,7 +69,20 @@
         <h1 class="text-center">Products</h1>
         @if(isset($products) && $products->count() > 0)
             <div class="row mt-5">
-                @foreach($products as $product)
+            @foreach($products as $product)
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ asset('images/' . $product->image) }}" class="card-img-top" alt="{{ $product->name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $product->name }}</h5>
+                        <p class="card-text">{{ $product->description }}</p>
+                        <p class="card-text">${{ $product->price }}</p>
+                        <a href="{{ route('product.show', $product->id) }}" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+                <!-- @foreach($products as $product)
                     <div class="col-md-4">
                         <div class="card mb-4">
                             <img src="{{ asset('images/' . $product->image) }}" class="card-img-top" alt="{{ $product->name }}">
@@ -86,7 +99,7 @@
                             </div>
                         </div>
                     </div>
-                @endforeach
+                @endforeach -->
             </div>
         @else
             <div class="no-products-card">
