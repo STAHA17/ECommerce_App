@@ -31,15 +31,41 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     <script>
         function initMap() {
-            var location = { lat: 40.712776, lng: -74.005974 }; // Example coordinates (New York City)
+            // Default location (Islamabad)
+            var defaultLocation = { lat: 33.738045, lng: 73.084488 };
             var map = new google.maps.Map(document.getElementById('map-footer'), {
                 zoom: 14,
-                center: location
+                center: defaultLocation
             });
             var marker = new google.maps.Marker({
-                position: location,
+                position: defaultLocation,
                 map: map
             });
+
+            // Try HTML5 geolocation.
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var userLocation = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+                    map.setCenter(userLocation);
+                    marker.setPosition(userLocation);
+                }, function() {
+                    handleLocationError(true, map.getCenter());
+                });
+            } else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false, map.getCenter());
+            }
+        }
+
+        function handleLocationError(browserHasGeolocation, pos) {
+            var infoWindow = new google.maps.InfoWindow({ map: map });
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ?
+                'Error: The Geolocation service failed.' :
+                'Error: Your browser doesn\'t support geolocation.');
         }
     </script>
 </footer>
