@@ -8,6 +8,19 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CheckoutController;
 
+use App\Http\Controllers\JobController;
+
+Route::get('/available-jobs', [JobController::class, 'index'])->name('available-jobs');
+
+// Route to show job details
+Route::get('/jobs/{id}', [JobController::class, 'show'])->name('jobs.show');
+
+// Route to show the job creation form
+Route::get('/jobs/create', [JobController::class, 'create'])->name('jobs.create');
+
+// Route to handle the job creation form submission
+Route::post('/jobs', [JobController::class, 'store'])->name('jobs.store');
+
 // routes/web.php
 Route::get('/product/{id}', [ProductController::class, 'show'])->name('product.show');
 

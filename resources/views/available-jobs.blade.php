@@ -8,6 +8,11 @@
     <h1 class="text-center mb-4">Available Jobs</h1>
     <p class="lead text-center">Explore our current job openings and find the perfect opportunity to join our team.</p>
 
+    <!-- Add new button init -->
+    <!-- <div class="text-center mb-4">
+        <a href="{{ route('jobs.create') }}" class="btn btn-success">Create New Job</a>
+    </div> -->
+
     <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start job-item">
             <div class="d-flex w-100 justify-content-between">

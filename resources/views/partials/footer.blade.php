@@ -31,8 +31,8 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     <script>
         function initMap() {
-            // Default location (Islamabad)
-            var defaultLocation = { lat: 33.738045, lng: 73.084488 };
+            // Default location (New York City)
+            var defaultLocation = { lat: 40.712776, lng: -74.005974 };
             var map = new google.maps.Map(document.getElementById('map-footer'), {
                 zoom: 14,
                 center: defaultLocation
