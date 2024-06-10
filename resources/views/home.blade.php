@@ -65,7 +65,7 @@
         </a>
     </div>
 
-    <div class="container mt-5">
+    <!-- <div class="container mt-5">
         <h1 class="text-center">Products</h1>
         @if(isset($products) && $products->count() > 0)
             <div class="row mt-5">
@@ -82,7 +82,7 @@
                 </div>
             </div>
             @endforeach
-                <!-- @foreach($products as $product)
+                @foreach($products as $product)
                     <div class="col-md-4">
                         <div class="card mb-4">
                             <img src="{{ asset('images/' . $product->image) }}" class="card-img-top" alt="{{ $product->name }}">
@@ -99,30 +99,30 @@
                             </div>
                         </div>
                     </div>
-                @endforeach -->
+                @endforeach 
             </div>
         @else
             <div class="no-products-card">
                 <p>There's some error that's why Products isn't showing. Sorry for the inconvenience.</p>
             </div>
         @endif
-    </div>
+    </div> -->
 
 
-    <!-- Product Grid -->
-    <!-- <div class="row mt-5">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="{{ asset('images/Product1.jpg') }}" class="card-img-top" alt="Product 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 1</h5>
-                        <p class="card-text">$19.99</p>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+   <!-- Product Grid -->
+    <div class="row mt-5">
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="{{ asset('images/Product1.jpg') }}" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 1</h5>
+                            <p class="card-text">$19.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
                     </div>
                 </div>
-            </div> -->
             <!-- 2nd -->
-            <!-- <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card mb-4">
                     <img src="{{ asset('images/Product2.jpg') }}" class="card-img-top" alt="Product 2">
                     <div class="card-body">
@@ -131,9 +131,9 @@
                         <a href="#" class="btn btn-primary">Add to Cart</a>
                     </div>
                 </div>
-            </div> -->
+            </div> 
             <!-- 3rd -->
-            <!-- <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card mb-4">
                     <img src="{{ asset('images/Product3.jpg') }}" class="card-img-top" alt="Product 3">
                     <div class="card-body">
@@ -143,8 +143,41 @@
                     </div>
                 </div>
             </div>
+            <!-- 4th -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="{{ asset('images/service3.jpg') }}" class="card-img-top" alt="Product 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 4</h5>
+                        <p class="card-text">$19.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 5th -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="{{ asset('images/service3.jpg') }}" class="card-img-top" alt="Product 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 5</h5>
+                        <p class="card-text">$19.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 6th -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="{{ asset('images/service3.jpg') }}" class="card-img-top" alt="Product 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 6</h5>
+                        <p class="card-text">$19.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div> -->
+    </div>
 
     @include('partials.footer')
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -13,6 +13,12 @@ class ProductController extends Controller
     //     $products = Product::all(); // Assuming you have a Product model
     //     return view('home', compact('products'));
     // }
+    public function showProductPage()
+    {
+        $product = Product::find(1); // Replace with appropriate product retrieval logic
+        return view('product-page', compact('product'));
+    }
+    
     public function index()
     {
         $products = Product::all();

@@ -6,10 +6,35 @@ use Illuminate\Http\Request;
 use App\Models\CartItem;
 use App\Models\Product;
 use Illuminate\Support\Facades\Session;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
 {
+    // public function add(Request $request)
+    // {
+    //     $product = Product::find($request->product_id);
+
+    //     if (!$product) {
+    //         return redirect()->back()->with('error', 'Product not found!');
+    //     }
+
+    //     $cart = Session::get('cart', []);
+
+    //     if (isset($cart[$product->id])) {
+    //         $cart[$product->id]['quantity'] += $request->quantity;
+    //     } else {
+    //         $cart[$product->id] = [
+    //             'name' => $product->name,
+    //             'quantity' => $request->quantity,
+    //             'price' => $product->price,
+    //             'image' => $product->image
+    //         ];
+    //     }
+
+    //     Session::put('cart', $cart);
+
+    //     return redirect()->back()->with('success', 'Product added to cart!');
+    // }
 
     public function add(Request $request)
     {
